@@ -262,7 +262,6 @@ class Database extends DBCore{
        return $resResults;
     }
     else{
-      Debug::Debug_er('Query ['.$strQuery.'] METHOD ['.__METHOD__.'] LINE['.__LINE__.']',1);
       return FALSE;
     }
   }
@@ -348,7 +347,7 @@ class Database extends DBCore{
        return $resResults;
     }
     else{
-      Debug::Debug_er('Query ['.$strQuery.'] METHOD ['.__METHOD__.'] LINE['.__LINE__.']',1);
+      //Debug::Debug_er('Query ['.$strQuery.'] METHOD ['.__METHOD__.'] LINE['.__LINE__.']',1);
       return FALSE;
     }
   }

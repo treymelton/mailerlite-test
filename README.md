@@ -37,3 +37,10 @@ General requirements
     -Usage of other framework features: migrations, seeders, tests, etc - ......sort...of...
     -Instructions how to run a project on local environment - this file named README.md
     -PSR-2 compliant source code - complete
+
+Updates:
+-Corrected Tab redirection for "no subscribers" condition
+-Corrected syntax error in SubscriberCore.php for domain validation
+-Corrected redundant "endpoint ready" message
+-Corrected email domain resolution condition to reflect dual failure on 301 redirects for popular domains. This benefits smaller domains, but could be a weakness.
+-Corrected padding on meta box entries

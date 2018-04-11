@@ -33,6 +33,7 @@ class InstallTool{
       // the relation to subscribers is broken catastrophically
       if(Database::Get()->CreateSubFields()){
         DisplayMessages::Get()->AddUserMSG('Sub-Fields table created!', 3);
+        DisplayMessages::Get()->AddUserMSG('API endpoint form ready!', 2);
         header('Location:'.SERVERADDRESS);
         exit;
       }

@@ -20,10 +20,7 @@ else{
     $strFirstRun = 'Tables not created. Create them ';
     $strFirstRun .= '<a href=index.php?loadtables=true>now?</a>';
     DisplayMessages::Get()->AddUserMSG($strFirstRun, 1);
-  }
-  else{
-    DisplayMessages::Get()->AddUserMSG('API endpoint form ready!', 2);
-  }
+  }     
 }
 //load our POST options
 $arrPOST = Abstraction::Get()->LoadPostSubscriberData();
@@ -58,7 +55,7 @@ include(SERVERPATH.DIRECTORY_SEPARATOR.'forms'.DIRECTORY_SEPARATOR.'subscriberfo
             <div id="Subscriberupdate" class="tab-pane fade in active">
               <h3>Subscriber Insert Form</h3>
               <p>This is the Subscriber insert form</p>
-              <form action="Subscriberupdate.php" method="post" name="uupdate">
+              <form action="userupdate.php" method="post" name="uupdate">
                 <?php
                     echo $strSubscriberForm;
                 ?>

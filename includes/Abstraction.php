@@ -205,7 +205,7 @@ class Abstraction{
         $objData = new SubField();
         $objData->intSubFieldId = 'new_'.mt_rand(10,time());
     }
-    $strMetaBox = '<div class="row">';
+    $strMetaBox = '<div class="row rowmarginoffset">';
     $strMetaBox .= '<div class="col-md-4">';
     $strMetaBox .= '<label for="title_'.$objData->intSubFieldId.'">Title:</label>';
     $strMetaBox .= '<input type="hidden" name="metaid[]" value="'.$objData->intSubFieldId.'" />';

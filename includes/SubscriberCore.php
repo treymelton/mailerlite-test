@@ -78,7 +78,7 @@ class SubscriberCore{
    function VerifyUniqueEmail($strEmail){
     if(!Database::Get()->GetUserDataByEmail($strEmail)){
       $strDomain = substr($strEmail, strpos($strEmail, "@") + 1);
-      if(!Utility::Get()->GetURLHeaderHTTP($strDomainL)){//check for a valid URL
+      if(!fopen("http://www.$strDomain",'r') && !Utility::Get()->GetURLHeaderHTTP($strDomain)){//check for a valid URL
         $this->arrValidationErrors['duplicate'] = array('duplicate'=> 'This email domain seems to be invalid. Please check it and try again.');
         DisplayMessages::Get()->AddUserMSG( 'This email domain seems to be invalid. Please check it and try again.',1);
         return FALSE;
@@ -156,7 +156,7 @@ class SubscriberCore{
     **************************************************************/
     //get our subscribers
     if(!$arrSubscribers = $this->GetSubscribersData(CLIENTID)){
-      DisplayMessages::Get()->AddUserMSG('No Subscribers at this time. <a data-toggle="tab" href="#userupdate">Try This</a>', 1);
+      DisplayMessages::Get()->AddUserMSG('No Subscribers at this time. <a data-toggle="tab" href="#Subscriberupdate">Try This</a>', 1);
       return FALSE;
     }
     //make our primary data arrary
