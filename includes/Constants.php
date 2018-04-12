@@ -4,7 +4,7 @@ date_default_timezone_set('UTC');
 define('DEVELOPMENT',TRUE);
 /*
 * if the environment is a localhost installation, set this to TRUE
-* if the environment is a public development or staging server, set this to TRUE
+* if the environment is a public development or staging server, set this to FALSE
 */
 define('LOCALHOST',TRUE);
 

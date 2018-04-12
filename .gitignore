@@ -1,0 +1,10 @@
+
+*.log
+*.log
+adminupdate.php
+apiendpoint.php
+includes/TABLEOBJECTTEMPLATE.php
+*.txt
+vtemplate.php
+template.php
+includes/NewClassTemplate.php

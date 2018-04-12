@@ -25,7 +25,7 @@ class AJAXCore{
   }
 
   /**
-  * before gicing a form back, wrap it in a basic CSS wrapper
+  * before giving a form back, wrap it in a basic CSS wrapper
   * @param $strHTMLCollection collection of form or loose HTML elements
   * @param $strTitle
   * @param $strHeading

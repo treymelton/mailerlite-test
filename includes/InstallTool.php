@@ -1,7 +1,7 @@
 <?php
  /**************************************************************************
  * @CLASS InstallTool
- * @brief Install the application o the local server
+ * @brief Install the application to the local server
  * @REQUIRES:
  *  -Database.php
  *

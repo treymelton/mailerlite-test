@@ -44,9 +44,9 @@ class Abstraction{
 
   /**
   * given a name/value pair array create select box options
-  * @param $arrDataSet
-  * @param $varPreviousOption
-  * @param $strOptionClass
+  * @param $arrDataSet - data we intend to populate the options with
+  * @param $varPreviousOption - the previous option selected by record or $_POST
+  * @param $strOptionClass - optional CSS 
   * @return string ( HTML )
   */
   function MakeSimpleDropDownOptions($arrDataSet,$varPreviousOption,$strOptionClass=''){
@@ -60,7 +60,7 @@ class Abstraction{
 
   /**
   * gather POST and subscriber data from POST submission
-  * @return array ( cleaned POST and subscriber array
+  * @return array ( cleaned POST and subscriber array )
   */
   function LoadPostSubscriberData(){
     if(array_key_exists('POSTDATA',$_SESSION) && sizeof($_SESSION['POSTDATA']) > 0){
@@ -196,11 +196,10 @@ class Abstraction{
 
   /**
   * get a meta box row for insert
-  * @param $intID - if this box is for update, we need an ID
   * @param $objData - previous data if it exists
   * @return string ( HTML )
   */
-  function GetMetaBox($objData){
+  function GetMetaBox($objData=NULL){
     if(!is_object($objData)){
         $objData = new SubField();
         $objData->intSubFieldId = 'new_'.mt_rand(10,time());

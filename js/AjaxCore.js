@@ -19,12 +19,12 @@ var AjaxCore = {
       if(typeof varAjaxContent == 'string')
         arrPayLoad = this.ConvertCurlToJson(varAjaxContent);
 
-      //check to see if it's an array
+      //check to see if it's an object
       else if(varAjaxContent instanceof Object)
         arrPayLoad = this.ConvertFormToJson(varAjaxContent);
 
-      //check to see if it's an object
-      else if(variable.constructor === Array)
+      //check to see if it's an array
+      else if(varAjaxContent.constructor === Array)
         arrPayLoad = this.ConvertFormToJson(varAjaxContent);
       //can't make empty requests
       if( arrPayLoad.length < 1 ){

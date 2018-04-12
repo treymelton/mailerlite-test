@@ -2,6 +2,8 @@
 /**
  * @file BaseClass.php
  * @brief This file contains the BaseClass class.
+ * @Original Author - Logan Boyd. He's full of himself, but is honorable.
+ * @Edited - Trey Melton. Evolution was required. 
  */
                                                                                                                               
 require_once(dirname(__FILE__)  .DIRECTORY_SEPARATOR.'Debug.php');

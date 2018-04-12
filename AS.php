@@ -12,7 +12,7 @@ class AjaxC EXTENDS AJAXCore{
 
   /**
   * primary handler for execution processing
-  * @return string    UpdateAdminSubscriber($arrPOST)
+  * @return string 
   */
   function AjaxCall(){
      if($this->strRequestAction == 'subscribermodify')
